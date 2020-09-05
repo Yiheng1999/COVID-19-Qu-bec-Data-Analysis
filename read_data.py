@@ -20,9 +20,9 @@ active_url = "https://raw.githubusercontent.com/ishaberry/Covid19Canada/master/t
 active_data = pd.read_csv(active_url,index_col=0,parse_dates=[0])
 qc_active_data = active_data.loc["Quebec"]
 
-print(qc_cases_data)
-print(qc_mortality_data)
-print(qc_testing_data)
-print(qc_recovered_data)
-print(qc_active_data)
+# print(qc_cases_data)
+# print(qc_mortality_data)
+# print(qc_testing_data)
+# print(qc_recovered_data)
+# print(qc_active_data)
 
