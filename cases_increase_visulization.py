@@ -1,7 +1,7 @@
 from read_data import *
 import matplotlib.pyplot as plt
 import numpy as np
-import matplotlib.ticker as mticker
+import matplotlib.ticker as ticker
 
 date = qc_cases_data["date_report"]
 cases = qc_cases_data["cases"]
@@ -23,9 +23,9 @@ ax.plot(date, cumulative_cases, color='b', label="Cumulative Cases")
 plt.legend(loc='upper left')
 plt.xticks(rotation=45)
 
-ax.xaxis.set_major_locator(mticker.MultipleLocator(10))
-ax.xaxis.set_minor_locator(mticker.MultipleLocator(1))
-ax.xaxis.set_minor_formatter(mticker.NullFormatter())
+ax.xaxis.set_major_locator(ticker.MultipleLocator(10))
+ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
+ax.xaxis.set_minor_formatter(ticker.NullFormatter())
 
 plt.title("The COVID-19 Cases Increase Trend From January 25")
 
